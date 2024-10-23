@@ -12,10 +12,8 @@ public class ConverteDados implements IConverteDados{
 		try {
 			return mapper.readValue(json, classe);
 		} catch (JsonMappingException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (JsonProcessingException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		return null;
