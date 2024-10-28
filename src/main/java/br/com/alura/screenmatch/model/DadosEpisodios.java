@@ -9,4 +9,8 @@ public record DadosEpisodios(@JsonAlias("Title")String titulo,
                             @JsonAlias("imdbRating") String avaliacao,
                             @JsonAlias("Released") String dataLancamento) {
 
+    Integer numero() {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
 }

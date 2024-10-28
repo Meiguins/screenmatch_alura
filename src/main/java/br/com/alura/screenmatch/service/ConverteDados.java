@@ -14,7 +14,7 @@ public class ConverteDados implements IConverteDados{
 		} catch (JsonMappingException e) {
 			e.printStackTrace();
 		} catch (JsonProcessingException e) {
-			e.printStackTrace();
+			throw new RuntimeException(e);
 		}
 		return null;
 	}
